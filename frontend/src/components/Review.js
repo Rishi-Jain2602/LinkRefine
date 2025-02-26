@@ -13,7 +13,7 @@ export default function Review() {
   useEffect(() => {
     if (storedUrl) {
       axios
-        .get("http://127.0.0.1:8000/linkrefine/review", {
+        .get("https://linkrefine.onrender.com/linkrefine/review", {
           params: { "link_id": storedUrl },
         })
         .then((response) => {
