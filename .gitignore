@@ -5,3 +5,5 @@
 /backend/src/Models/__pycache__
 /backend/src/routes/__pycache__
 /backend/src/scrapper/__pycache__
+/backend/src/Database/__pycache__
+/backend/src/chain/__pycache__
