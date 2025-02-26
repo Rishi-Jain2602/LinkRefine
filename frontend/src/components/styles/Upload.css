@@ -1,0 +1,143 @@
+/* General Styles */
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: 88vh; 
+    background: linear-gradient(135deg, #000000, #0b023f); /* Dark gradient */
+    color: rgba(133, 125, 244, 0.8);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .upload-form {
+    background: rgba(1, 0, 12, 0.1); /* Semi-transparent white for glass effect */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .upload-form label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgba(125, 117, 246, 0.8);
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  .upload-form input {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(133, 125, 244, 0.8);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .upload-form input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+  }
+  
+  .upload-form button {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #120256, #490bb3); /* Vibrant purple gradient */
+    color: rgba(133, 125, 244, 0.8);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .upload-form button:hover {
+    background: linear-gradient(135deg, #673ab7, #9c27b0);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(156, 39, 176, 0.4);
+  }
+  
+  .upload-form button:active {
+    transform: translateY(0);
+    box-shadow: none;
+    color: rgba(133, 125, 244, 0.8);
+  }
+  
+  /* Status Section */
+  .status-section {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .spinner-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #9c27b0; /* Vibrant purple */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .text-success {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgba(133, 125, 244, 0.8); /* Green for success */
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .upload-form {
+      padding: 1.5rem;
+    }
+  
+    .upload-form label {
+      font-size: 1rem;
+    }
+  
+    .upload-form input {
+      font-size: 0.9rem;
+    }
+  
+    .upload-form button {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .upload-form {
+      padding: 1rem;
+    }
+  
+    .spinner-text {
+      font-size: 1rem;
+    }
+  
+    .text-success {
+      font-size: 1rem;
+    }
+  }
