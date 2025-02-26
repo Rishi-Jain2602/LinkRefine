@@ -1,0 +1,105 @@
+/* General Styles */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 88.5vh;
+  background: linear-gradient(135deg, #000000, #0b023f); /* Dark black to dark purple gradient */
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #0d0aa2;
+}
+
+.home-content {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05); /* Semi-transparent white for glass effect */
+  border-radius: 20px;
+  padding: 40px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2a349a;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-description {
+  font-size: 1.2rem;
+  color: rgba(133, 125, 244, 0.8);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.home-button {
+  background: linear-gradient(135deg, #3d0047, #340781); /* Vibrant purple gradient */
+  color: rgba(133, 125, 244, 0.8);
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(156, 39, 176, 0.4);
+}
+
+.home-button:hover {
+  background: linear-gradient(135deg, #673ab7, #9c27b0);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(156, 39, 176, 0.6);
+}
+
+.home-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(156, 39, 176, 0.4);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-description {
+    font-size: 1rem;
+  }
+
+  .home-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 1.8rem;
+  }
+
+  .home-description {
+    font-size: 0.9rem;
+  }
+
+  .home-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
