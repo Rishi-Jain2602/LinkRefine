@@ -1,0 +1,174 @@
+/* General Styles */
+.custom-navbar {
+    background: linear-gradient(135deg, #000000, #0b023f); /* Dark gradient */
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Brand/Logo */
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(112, 112, 224);
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+  }
+  
+  .navbar-brand:hover {
+    color: #010241; /* Vibrant purple */
+  }
+  
+  /* Hamburger Menu */
+  .menu-toggle {
+    display: none; /* Hide the checkbox */
+  }
+  
+  .hamburger {
+    display: none; /* Hide by default */
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: rgb(87, 77, 154);
+  }
+  
+  /* Navbar Links */
+  .navbar-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .nav-link {
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(112, 112, 224);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #18074f; /* Vibrant purple */
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block; /* Show hamburger on smaller screens */
+    }
+  
+    .navbar-links {
+      /* display: none;  */
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(135deg, #0e0e0e, #120369);
+      padding: 0.5rem 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    .menu-toggle:checked ~ .navbar-links {
+      display: flex; /* Show links when menu is toggled */
+    }
+  
+    .nav-link {
+      padding: 0.5rem 2rem;
+      text-align: center;
+    }
+  }
+
+  /* General Styles */
+.custom-navbar {
+    background: linear-gradient(135deg, #000000, #0b023f); /* Dark gradient */
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+  
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Brand/Logo */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(112, 112, 224);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+  
+.navbar-brand:hover {
+    color: #010241; /* Vibrant purple */
+}
+  
+/* Hamburger Menu */
+.menu-toggle {
+    display: none; /* Hide the checkbox */
+}
+  
+.hamburger {
+    display: none; /* Hide by default */
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: rgb(87, 77, 154);
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger on smaller screens */
+    }
+
+    .navbar-links {
+        display: none; /* Hide links initially */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(135deg, #0e0e0e, #120369);
+        padding: 0.5rem 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-toggle:checked + .hamburger + .navbar-links {
+        display: flex; /* Show links when menu is toggled */
+    }
+
+    .nav-link {
+        padding: 0.5rem 2rem;
+        text-align: center;
+    }
+}
