@@ -1,9 +1,20 @@
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Review from './components/Review'
+import Upload from './components/Upload'
 function App() {
   return (
-    <div className="container">
-      This is the starting of a new project
-    </div>
+    <>
+      <Router>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element = {<Home/>} />
+          <Route path='/upload' element = {<Upload/>} />
+          <Route path='/review' element = {<Review/>} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
