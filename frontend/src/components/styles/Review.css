@@ -1,0 +1,121 @@
+.review-container {
+  padding: 2rem;
+  max-width: 1600px; 
+  margin: 0 auto;   
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: linear-gradient(135deg, #000000, #0b023f);
+  min-height: 100vh;
+  color: #ffffff; 
+}
+
+
+
+/* Card styling */
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column; 
+  padding: 1.5rem;
+  color: rgba(255, 255, 255, 0.9); 
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Center the top image and make it a circle for profile pics */
+.card-img-left {
+  max-width: 480px;
+  align-self: center;
+  margin-bottom: 1rem;
+  border-radius: 50%; /* circular image */
+  object-fit: cover;
+}
+
+/* Card body */
+.card-body {
+  padding: 0;
+}
+
+/* Titles with a brighter color for contrast */
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #ffd700; /* gold color for headings */
+}
+
+/* Paragraph styles */
+.card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+/* Messages for no URL or loading */
+.no-url-message,
+.loading {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 3rem;
+  background: linear-gradient(135deg, #000000, #0b023f);
+  min-height: 88vh;
+  color: #fff;
+}
+
+/* Responsive Styles */
+
+/* For smaller screens (mobile) */
+@media (max-width: 768px) {
+  .review-container {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .card-img-left {
+    max-width: 250px;
+    margin-bottom: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* For tablets or small desktops */
+@media (max-width: 1024px) {
+  .review-container {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+
+  .card-img-top {
+    max-width: 250px;
+    margin-bottom: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+}
